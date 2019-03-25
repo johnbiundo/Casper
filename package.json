@@ -1,8 +1,8 @@
 {
-    "name": "casper",
-    "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
+    "name": "casperjb",
+    "description": "John's customized Casper",
     "demo": "https://demo.ghost.io",
-    "version": "2.9.6",
+    "version": "1.0.0",
     "engines": {
         "ghost": ">=2.0.0",
         "ghost-api": "v2"
@@ -22,8 +22,8 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
+        "name": "John Biundo",
+        "email": "johnfbiundo@gmail.com",
         "url": "https://ghost.org"
     },
     "gpm": {
