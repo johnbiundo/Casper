@@ -14,3 +14,58 @@
 .subscribe-overlay-description {
     font-family: 'Source Sans Pro', Georgia, serif;
 }
+
+/* Make the post content font size 0.3rem smaller */
+.post-full-content {
+    font-size: 1.9rem;
+}
+
+/* Reduce h2 size and add some bottom margin */
+.post-full-content h2 {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 3rem;
+}
+
+/* Reduce padding-bottom of the footer by 40px */
+.site-footer {
+    padding-bottom: 20px;
+}
+
+/* Reduce top and bottom margins for pictures and videos by 1em */
+.post-full-content img,
+.post-full-content video {
+    margin: 0.5em auto;
+}
+
+/* Reduce top and bottom margins for code */
+.post-full-content pre {
+    margin: 0 0 2em;
+}
+
+/* Reduce padding top of the post header by 4vw */
+.post-full-header {
+    padding: 3vw 3vw 3vw;
+}
+
+/* Center the header post image */
+.post-full-image {
+    display: block;
+    margin: auto;
+}
+
+/* Do not stretch header image */
+.post-full-image img {
+    height: 100% !important;
+}
+
+@media (max-width: 500px) {
+    .post-full-image {
+        height: 100% !important;
+    }
+}
+
+/* Remove the shadows as we move up the image */
+.post-full-content::before,
+.post-full-content::after {
+    display: none;
+}
