@@ -22,6 +22,8 @@
         type='text/css' media='all' />
 
     <link rel="stylesheet" type="text/css" href="{{asset "built/custom.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/callout.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/prism.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -86,6 +88,9 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+
+    {{!-- John's custom JS --}}
+    <script type="text/javascript" src="{{asset "built/prism.js"}}"></script>
 
     {{#if pagination.pages}}
     <script src="{{asset "built/infinitescroll.js"}}"></script>
