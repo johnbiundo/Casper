@@ -1,4 +1,5 @@
 /* Use Source Sans Pro font */
+
 .post-full-content {
     font-family: 'Source Sans Pro', Georgia, serif;
 }
@@ -15,9 +16,17 @@
     font-family: 'Source Sans Pro', Georgia, serif;
 }
 
-/* Make the post content font size 0.3rem smaller */
+/* Make inner content 1280px */
+.inner {
+    max-width: 1280px;
+}
+
+/* - Make the post content font size 0.3rem smaller
+ * - Reduce left and right padding by 50px
+ */
 .post-full-content {
     font-size: 1.9rem;
+    padding: 70px 50px 0;
 }
 
 /* Reduce h2 size and add some bottom margin */
@@ -26,6 +35,14 @@
     font-size: 3rem;
 }
 
+/* Reduce padding below paragraphs, lists, blockquotes by 1em */
+p,
+ul,
+ol,
+dl,
+blockquote {
+    margin: 0 0 0.5em 0;
+}
 /* Reduce padding-bottom of the footer by 40px */
 .site-footer {
     padding-bottom: 20px;
@@ -33,8 +50,9 @@
 
 /* Reduce top and bottom margins for pictures and videos by 1em */
 .post-full-content img,
-.post-full-content video {
-    margin: 0.5em auto;
+.post-full-content video,
+.post-full-content figure {
+    margin: 0.5em auto !important;
 }
 
 /* Reduce top and bottom margins for code */
