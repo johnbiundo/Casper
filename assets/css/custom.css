@@ -87,3 +87,74 @@ blockquote {
 .post-full-content::after {
     display: none;
 }
+
+/* image dropshadow */
+.post-full-content .kg-image {
+    box-shadow: 12px 12px 24px 1px rgba(153, 153, 153, 1);
+    margin-bottom: 5px;
+}
+
+/* drop caps */
+.drop-cap {
+    color: #9c0808;
+    background: gray;
+    margin-right: 5px;
+    float: left;
+    font-family: Consolas;
+    font-style: italic;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/* table of contents */
+.toc-location {
+    margin-left: 50px;
+    width: 100%;
+}
+.table-of-contents {
+    width: 40%;
+    background: #eee;
+    font-size: 0.8em;
+    padding: 0.5em 2em;
+    margin: 0 0 0.5em 0.5em;
+}
+.table-of-contents ul {
+    padding: 0;
+}
+.table-of-contents li {
+    margin: 0 0 0.25em 0;
+}
+.table-of-contents a {
+    text-decoration: none;
+}
+.table-of-contents a:hover,
+.table-of-contents a:active {
+    text-decoration: underline;
+}
+
+h3:target {
+    animation: highlight 5s ease;
+}
+
+@keyframes highlight {
+    from {
+        background: yellow;
+    }
+    to {
+        background: white;
+    }
+}
+
+.article-headline {
+    margin-bottom: 1em !important;
+}
+
+.article-headline-link {
+    color: #969494 !important;
+    outline: none;
+    margin-right: 0.25rem;
+    box-shadow: none !important;
+}
