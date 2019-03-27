@@ -16,6 +16,11 @@
     font-family: 'Source Sans Pro', Georgia, serif;
 }
 
+/* fix color of site header */
+.site-header {
+    background-color: #d9dbdc;
+}
+
 /* Make inner content 1280px */
 .inner {
     max-width: 1280px;
@@ -96,16 +101,12 @@ blockquote {
 
 /* drop caps */
 .drop-cap {
-    color: #9c0808;
-    background: gray;
-    margin-right: 5px;
     float: left;
     font-family: Consolas;
-    font-style: italic;
     font-size: 75px;
     line-height: 60px;
     padding-top: 4px;
-    padding-right: 8px;
+    padding-right: 5px;
     padding-left: 3px;
 }
 
@@ -115,7 +116,7 @@ blockquote {
     width: 100%;
 }
 .table-of-contents {
-    width: 40%;
+    max-width: 500px;
     background: #eee;
     font-size: 0.8em;
     padding: 0.5em 2em;
@@ -157,4 +158,17 @@ h3:target {
     outline: none;
     margin-right: 0.25rem;
     box-shadow: none !important;
+}
+
+.site-title {
+    padding-bottom: 12px;
+}
+
+.site-description {
+    font-weight: 400;
+}
+
+.site-nav-left a {
+    color: #312f2f !important;
+    font-weight: 700;
 }
